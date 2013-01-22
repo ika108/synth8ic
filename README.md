@@ -1,4 +1,4 @@
 synth8ic
 ========
 
-Collaborative project to buld a fulle featured 8 bit synthetiser
+Collaborative project to build a full featured 8 bit synthetiser

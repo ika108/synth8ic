@@ -1,0 +1,34 @@
+Hey, this is our project manifest.
+The purpose to this document is to generaly describe who we are, what we want to accomplish, how we are going to do it and of course how to have the most fun from all of this.
+
+US : 
+- Sven is a 80s geek guy. Born with the begining of the video game industry, he was violently hacking at the age of 13 on his Atari ST trying to bend it into doing unholly stuff.
+- Youenn as come much later on the subject, but as a meta-trendy kind of guy, he was instantly appealed by the groovy and vintage part of the Chip-tune music.
+They met in work related context, since then, have started largely trolling on the chip-tune music subject until finding a common ground : Synth8IC
+
+WHAT :
+This project originaly is the bastard child of another canceled project (like a lot of them) with the purpose to play with some SID (aka MOS 6581) through a modern informatic interface.
+After much study on the beloved SID, and other old sound chips, it has come to the attention of Sven that inner working of those chips wasn't very complicated, and that it would be probably easier and much more fun to write an embedded software from the ground up trying to sound like those old school sound chips.
+This is how Synth8IC was born. Of course, for this project to be fun, it must works on the simplest hardware possible. (Remember in the 90s how we did so much with so little...)
+
+HOW : 
+We iterated a lot on how to do this. Not because it is really complicated, but because there is a LOT of different ways to do such thing. 
+The actual agreement we have reached on how to build such thing is the following :
+- We will start by writting a plateform agnostic piece of software to establish the base software architecture and start playing with it without too much hardware hassle. Remember, hardware is glitchy, messy and subject to a lot of wierd (wired ?) and hard to understand issues. We choosed this way so we don't mix too much software and hardware bugs at the same time. Also, Youenn being much more of a software guy and Sven the hardware, this approach will allow us to work concurently as much as possible without having to wait for one another too much. An intersting by-product of this approach will be to allow the people willing to have fun with the software to be able to without having to use a solder iron, therefor avoiding burning themselves, house, familly, cats, cookies, tooth brush, toilet paper... Sorry, that's my grocery list. Whatever... 
+- Once we have a working software concept, we will try to make it works on an home-made hardware sound plateforme based on a simple 8-Bits AVR MCUs. This will be our first offical release. R1. By this time (probably around 2054) we will have a solid, optimised and neat sounding architecture. Or maybe a piece of crap gathering dust in our backups and attics. This release will be interfaced by an industry standard input midi bus and will output its noises through an analog output. Simple to use, nothing complex. Some adjusting control through midi controles, maybe some knobs on the panel, but nothing too fancy. 
+- After that, the world will probably have reached its envitable end, but just in case, lets make some more plans shall we ? The second iteration (R2) will have a fully reprogramable internal software patching system. Those will be dynamicaly alterable throught sysex midi commands. At this point, I'm not sure that the poor AVR chip will still have enough horsepower to pull it, but we will see how it goes with the R1, and eventualy adjust our ways.
+- R3 purpose will be to show the world that you can do much heavier stuff with hardware that with just mere software on a computer. The dynamic patching system will be implemented in a FPGA dye by our grand-grand-children.
+- At some point, we will also build a game cabinet midi controller to interface with the synthetizer. probably between R1 and R2.
+
+fun, FUN, FUN !!! :
+We want to keeps this project fun. That means NO DEADLINE, beers and sex will always be more important that this project. So if you are contributing to this project, and are waiting for someone to unblock you in your work, remember that the guy you are waiting for have probably more important stuff to do. LIKE SEX ! so don't spam everyone on the internet complaining that S or Y is a lazy douchebag... 
+Learning is fun, choosing tricky ways to do simple stuff is fun, trolling (to some extend of course) is also fun. So thoses points will be obviously part of the project.
+
+Ok, this manifest has gone a little bit awol at some point, but I'm sure you get the idea. So let's do this ! (or not, your choice :-P)
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+#!/bin/sh
+SED='@SED@'
+TAR='@TAR@'
+d=$1; shift; mkdir "$d"
+for f; do
+	"$SED" 's/#.*//' "$f" > "$d/$f"
+done
+"$TAR" -cvf "$d.tar" "$d"

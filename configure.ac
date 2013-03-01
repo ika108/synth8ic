@@ -17,8 +17,12 @@ AC_DEFINE([FOO], [3.14], [This is just a macro define test])
 AC_SUBST([BAR], [21.297])
 
 # Check for libraries
+AC_CHECK_LIB([efence], [malloc], [EFENCELIB=-libefence])
+AC_SUBST(EFENCELIB)
+AC_CHECK_HEADERS([sys/param.h unistd.h])
+AC_CHECK_HEADER([wchar.h])
 
 # Output files
 AC_CONFIG_HEADERS([config.h])
-AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile script.sh:script.in])
 AC_OUTPUT 
